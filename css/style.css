@@ -1,0 +1,12 @@
+*{
+font-family: 'Courier New', Courier, monospace;
+}
+.S1{
+    text-align: center;
+    background-color: aqua;
+    height: 100%;
+}
+.S1 a input{
+    height: 50px;
+    width: 150px;
+}
