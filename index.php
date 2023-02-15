@@ -17,6 +17,10 @@
                 <a href="sites/register.php"><input type="submit" name="przycisk" value="rejestracja"></a>
                 <a href="sites/movie-search.php"><input type="submit" name="przycisk" value="wyszukaj film"></a>
             </div>
+            <?php
+                $con = new mysqli("127.0.0.1","root","","zspmovie");
+                
+            ?>
 
     </body>
 
