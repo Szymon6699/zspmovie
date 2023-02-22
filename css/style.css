@@ -5,8 +5,28 @@ font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: aqua;
     height: 100%;
+    
 }
 .S1 a input{
     height: 50px;
     width: 150px;
 }
+.S2{
+    text-align: center;
+    background-color: aqua;
+    height: 100%;
+    
+}
+.S3{
+    background-color: silver;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20;
+    text-align: right;
+    padding: 5;
+}
+.przycisk{
+    margin: 0 50 0 0;
+}
+
