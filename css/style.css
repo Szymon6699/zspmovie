@@ -29,4 +29,12 @@ font-family: 'Courier New', Courier, monospace;
 .przycisk{
     margin: 0 50 0 0;
 }
+.mp1{
+    background-color: darkcyan;
+    width: 800px;
+    height: 600px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
 

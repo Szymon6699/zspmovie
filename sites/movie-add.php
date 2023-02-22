@@ -19,8 +19,13 @@
                     $con = new mysqli("127.0.0.1","root","","zspmovie");
                     echo 'jestes zalogowany jako: '.$_SESSION["user_email"].'<br>';
                     if(isset($_POST{"namef"}) && isset($_POST["description"]) && isset($_POST["type"])){
-                        $sql="INSERT INTO film  (`name`,`description`,`type`) VALUES('".$_POST["namef"]."','".$_POST["description"]."','".$_POST["type"]."' )";
-                        $res = $con->query($sql);
+                        $sql="INSERT INTO film (`id`,`title`,`description`,`type`) VALUES('NULL','".$_POST["namef"]."','".$_POST["description"]."','".$_POST["type"]."' )";
+                        $con->query($sql);
+                        $w=$con->insert_id;
+                        $sql2="INSERT INTO user_has_film (`user_id`,`film_id`) VALUES ('".$_SESSION["user_id"]."')";
+
+                        $con->query($sql2);
+                        
                     }
                 
                 ?>
